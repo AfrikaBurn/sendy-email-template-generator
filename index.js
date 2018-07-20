@@ -3,7 +3,9 @@ var fs = require('fs');
 var jsdom = require("jsdom")
 const { JSDOM } = jsdom;
 var modulesArray = [];
-fs.readFile('template.html', 'utf8', function(err, html) {
+var folder = process.argv[2];
+var htmlTemplate = `${folder}/template.html`;
+fs.readFile(htmlTemplate, 'utf8', function(err, html) {
   if (err) throw err;
   inlineCss(html, { url: 'http://example.com/mushroom'})
   .then(function(html) {
@@ -11,6 +13,7 @@ fs.readFile('template.html', 'utf8', function(err, html) {
     const dom = new JSDOM(html).window.document;
     var window = dom.defaultView;
     var $ = require('jquery')(window);
+    var templateName = $('.container').attr('id');
     var modulesHTML = $('.module');
     $.each(modulesHTML, function(index, module) {
       var idAttr = $(module).attr('id');
@@ -22,16 +25,8 @@ fs.readFile('template.html', 'utf8', function(err, html) {
       }
       modulesArray.push(thisModule);
     });
-    // modulesArray = [
-    //   {
-    //   "uid": "headline_content",
-    //   "thumb": "thumbnails/headline-content.png",
-    //   "title": "Headline and Content",
-    //   "html": "\t<!-- HEADLINE AND CONTENT -->\n\t<table width=\"100%\" align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\n\t\t<tr>\n\t\t\t<td align=\"center\" bgcolor=\"#ffffff\">\n\t\t\t\t<table class=\"table600\" width=\"600\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\n\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td height=\"50\" style=\"font-size: 1px; line-height: 50px;\">&nbsp;</td>\n\t\t\t\t\t</tr>\n\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td data-editable=\"text\" align=\"center\" style=\"font-family: 'Lato', sans-serif; font-size: 28px; font-weight: 900; color: #383838; letter-spacing: 2px; line-height: 32px;\">\n\t\t\t\t\t\t\tWE ARE CREATIVE AGENCY\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td height=\"35\" style=\"font-size: 1px; line-height: 35px;\">&nbsp;</td>\n\t\t\t\t\t</tr>\n\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td data-editable=\"text\" align=\"center\" style=\"font-family: 'Open Sans', sans-serif; font-size: 13px; font-weight: 400; color: #999999; line-height: 24px;\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit odio at sodales aliquet. Aliquam erat volutpat. Aliquam eget lectus lacinia, bibendum nisl non, rutrum diam. In sit amet scelerisque leo, a ultricies sem. Curabitur rhoncus est a dolor pulvinar ullamcorper.\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td height=\"50\" style=\"font-size: 1px; line-height: 50px;\">&nbsp;</td>\n\t\t\t\t\t</tr>\n\n\t\t\t\t</table>\n\t\t\t</td>\n\t\t</tr>\n\t</table>\n\t<!-- END HEADLINE AND CONTENT -->"
-    // },
-    // ]
     var json = {
-      "template": "Baardskeerder",
+      "template": templateName,
       "template_uri": "",
       "author": "",
       "author_uri": "",
@@ -45,7 +40,8 @@ fs.readFile('template.html', 'utf8', function(err, html) {
       "footer": "</body>\n</html>",
       "modules": modulesArray
     }
-    console.log(JSON.stringify(json));
+    fs.writeFileSync( `${folder}/template.json`, JSON.stringify(json,null,2) );
+    console.log("Done");
   });
 });
 
