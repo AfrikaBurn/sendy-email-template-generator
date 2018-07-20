@@ -1,0 +1,421 @@
+<style>
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table table {
+    width: auto;
+  }
+
+  td {
+    background: #ede9df;
+    padding: 10px 20px 10px 20px;
+  }
+
+  p, td {
+    font-family: courier;
+    line-height: 150%;
+  }
+
+  a {
+    color: #c65541;
+    font-weight: 600;
+  }
+
+  a:hover {
+    font-weight: 600;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: Arial;
+    font-weight: 600;
+    text-align: left;
+    margin: 0 0 0.5em 0;
+  }
+
+  td td {
+    padding: 0;
+  }
+
+  /*General*/
+ /* td img {
+    max-width: 100%;
+  }*/
+
+  td.centred-image {
+    /*May need to be align=center*/
+    text-align: center;
+  }
+
+  td.image-caption {
+    text-align: right;
+    font-size: 13px;
+  }
+
+  td.no-padding {
+    padding: 0;
+  }
+
+  #Double_Image_With_Captions td.left {
+    padding-right: 10px;
+  }
+
+  #Double_Image_With_Captions td.right {
+    padding-left: 10px;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+  }
+
+  /*Module specific*/
+
+  #Banner {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #Banner td {
+    padding: 0 0 20px 0;
+  }
+
+  #Banner td img {
+    width: 100%;
+    height: auto;
+  }
+
+  #Banner td.view-web-version {
+    background: transparent;
+    text-align: center;
+    color: #bbb;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+  }
+
+  #Table_of_Contents ul li {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  #Link_Button a {
+    display: inline-block;
+    border: 2px solid #444;
+    padding: 10px 20px;
+    color: #444;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  #Sharing_Buttons td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #afa797;
+  }
+
+  #Sharing_Buttons td td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #Sharing_Buttons table {
+    width: 160px;
+  }
+
+  #Sharing_Buttons table img {
+    width: 100%;
+    display: block;
+  }
+
+  #Sharing_Buttons td td {
+    padding: 0;
+  }
+
+  #Footer {
+    margin-bottom: 30px;
+  }
+
+  #Footer td {
+    background: #7c766b;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  #Footer td a {
+    color: #fff;
+  }
+
+  #Additional_Reading td {
+    font-size: 12px;
+  }
+</style>
+<div class='container' id='Baardskeerder'>
+  <table align="center" border="0" cellpadding="0" cellspacing="0" class='module' id='Banner'>
+    <tr>
+      <td class='view-web-version'>
+        The Baardskeerder - AfrikaBurn's Newsletter - <a href="[webversion]" target="_blank" style="color: #aaa; text-decoration: underline;">View web version </webversion>
+      </td>
+    </tr>
+    <tbody>
+      <tr>
+        <td class='Banner' data-editable="image">
+          <div align="center"><img alt="" src="img/banner.png"></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table align="center" border="0" cellpadding="0" cellspacing="0" class='module' id='Single_Image_With_Caption'>
+    <tbody>
+      <tr>
+        <td class='centred-image'>
+          <table  align="center">
+            <tbody>
+              <tr>
+                <td data-editable="image">
+                  <img alt="" src="img/test-image.jpg" width="660" height="372">
+                </td>
+              </tr>
+              <tr>
+                <td data-editable="text" class='image-caption'>(Clan 2018 and SKOP IV, as shot by <a data-color="Link" href="https://afrikaburn.com">Isbjorn Viot</a>)</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table align="center" border="0" cellpadding="0" cellspacing="0" class='module' id='Double_Image_With_Captions'>
+    <tbody>
+      <tr>
+        <td class='centred-image left' >
+          <table  align="center">
+            <tbody>
+              <tr>
+                <td data-editable="image">
+                  <img alt="" src="img/test-image.jpg" width="312" height="176">
+                </td>
+              </tr>
+              <tr>
+                <td data-editable="text" class='image-caption'>(Clan 2018 and SKOP IV, as shot by <a data-color="Link" href="https://afrikaburn.com">Isbjorn Viot</a>)</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class='centred-image right'>
+          <table  align="center">
+            <tbody>
+              <tr>
+                <td data-editable="image">
+                  <img alt="" src="img/test-image.jpg" width="312" height="176">
+                </td>
+              </tr>
+              <tr>
+                <td data-editable="text" class='image-caption'>(Clan 2018 and SKOP IV, as shot by <a data-color="Link" href="https://afrikaburn.com">Isbjorn Viot)</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Heading_1'>
+    <tbody>
+      <tr>
+        <td class='heading heading-1' data-editable="text"><h1>Heading 1</h1></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Heading_2'>
+    <tbody>
+      <tr>
+        <td class='heading heading-2' data-editable="text"><h2>Heading 2</h2></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Heading_3'>
+    <tbody>
+      <tr>
+        <td class='heading heading-3' data-editable="text"><h3>Heading 3</h3></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Heading_4'>
+    <tbody>
+      <tr>
+        <td class='heading heading-4' data-editable="text"><h4>Heading 4</h4></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Plain_Text'>
+    <tbody>
+      <tr>
+        <td data-editable="text">
+          Dear AfrikaBurn Community Member,<br><br>
+          First of all, we at African Burns Transformational Desert Experiences would like to apologise for the toilet shitshow, and the plague they <a data-color="Link" href="#">Link text</a> brought. Second, we're doing our very best to tackle the scourge of Plug &amp; Play camps and the disco hellfire they bring. And then, we'd also like to humbly ask your forgiveness for so many loud rigs banging 24/7 from the Monday throughout the week... oh, wait.
+          That was last year.<br><br>
+          But seriously, isn't fantastic to look back and relive the beauty of what we achieved out there, way back at the end of April? Damn straight - so keep that in mind, as we look forward. That's how it works: we build on the gains in order to improve the experience next time. And this year a lot worked, very well - and much of that is down to the effort and goodwill of you, our community. But to business: it might seem like nothing very much happens at this time of year, but that's not the whole story. We're tooling up in the background, tweaking some systems and reviewing, well, pretty much everything whilst we have a little time to exhale and take it all in from a distance.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Table_of_Contents'>
+    <tbody>
+      <tr>
+        <td data-editable="text">
+          <h1>In this Newsletter</h1>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li><a data-color="Link" href="https://afrikaburn.com">Item 7</a></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Bulleted_List'>
+    <tbody>
+      <tr>
+        <td data-editable="text">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li><a data-color="Link" href="https://afrikaburn.com">Item 7</a></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Numbered_List'>
+    <tbody>
+      <tr>
+        <td data-editable="text">
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li><a data-color="Link" href="https://afrikaburn.com">Item 7</a></li>
+          </ol>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Link_Button'>
+    <tbody>
+      <tr>
+        <td>
+          <a class='link-button' data-editable="link" href='#'>Link button</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Line_Spacer'>
+    <tbody>
+      <tr>
+        <td>
+          <hr>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Spacer'>
+    <tbody>
+      <tr>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Sign_Off'>
+    <tbody>
+      <tr>
+        <td data-editable="text">
+          <hr>
+          THAT'S ALL FOLKS<br>
+          Sometimes, it really is.<br>
+          Onward,<br>
+          Travis Lyle<br>
+          Head of Communications
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Additional_Reading'>
+    <tbody>
+      <tr>
+        <td data-editable="text">
+            You're still reading? Good on you. You're a real trooper. Check out <a data-color="Link" href="https://afrikaburn.com">this cool thing</a> because you care so much.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table align="center" border="0" cellpadding="0" cellspacing="0" class='module' id='Sharing_Buttons'>
+    <tbody>
+      <tr>
+        <td align="center">
+          <table border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td class="no-padding">
+                  <a href="https://api.addthis.com/oexchange/0.8/forward/google_plusone_share/offer?url=[webversion]&pubid=ra-57cd884f32547d06&ct=1&title=Share%20the%20Baardskeerder&pco=tbxnj-1.0" target="_blank"><img src='img/google-plus-icon.png' /></a>
+                </td>
+                <td class="no-padding">
+                  <a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=[webversion]&pubid=ra-57cd884f32547d06&ct=1&title=Share%20the%20Baardskeerder&pco=tbxnj-1.0" target="_blank"><img src='img/facebook-icon.png' /></a>
+
+                </td>
+                <td class="no-padding">
+                  <a href="https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=[webversion]&pubid=ra-57cd884f32547d06&ct=1&title=Share%20the%20Baardskeerder&pco=tbxnj-1.0" target="_blank"><img src='img/twitter-icon.png' /></a>
+                </td>
+                <td class="no-padding">
+                  <a href="https://api.addthis.com/oexchange/0.8/forward/email/offer?url=[webversion]&pubid=ra-57cd884f32547d06&ct=1&title=Share%20the%20Baardskeerder&pco=tbxnj-1.0" target="_blank"><img src='img/email-icon.png' /></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" class='module' id='Footer'>
+    <tbody>
+      <tr>
+        <td data-editable="text">
+            AfrikaBurn, P.O.Box 191, Observatory, Cape Town, 7925, South Africa <unsubscribe data-color="Link" style="color:#fff">Unsubscribe here</unsubscribe>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

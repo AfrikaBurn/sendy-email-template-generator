@@ -1,0 +1,124 @@
+{
+  "template": "Baardskeerder",
+  "template_uri": "",
+  "author": "",
+  "author_uri": "",
+  "version": "1.0.0",
+  "default": "",
+  "fonts": [
+    "https://fonts.googleapis.com/css?family=Open+Sans:400,600",
+    "https://fonts.googleapis.com/css?family=Lato:400,700,900"
+  ],
+  "header": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1\" />\n\t<title>Maverick - Email Template</title>\n\t<style type=\"text/css\">\n\n\t@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);\n\t@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);\n\n\t.ReadMsgBody { width: 100%; background-color: #ffffff; }\n    .ExternalClass { width: 100%; background-color: #ffffff; }\n    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }\n\thtml { width: 100%; }\n\tbody { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; margin: 0; padding: 0; }\n\ttable { border-spacing: 0; border-collapse: collapse; }\n\ttable td { border-collapse: collapse; }\n\t.yshortcuts a { border-bottom: none !important; }\n\timg { display: block !important; }\n\ta { text-decoration: none; color: #a0cf50; }\n\n\t/* Media Queries */\n\n\t@media only screen and (max-width: 640px) {\n\t\tbody { width: auto !important; }\n\t\ttable[class=\"table600\"] { width: 450px !important; }\n\t\ttable[class=\"table-container\"] { width: 90% !important; }\n\t\ttable[class=\"container2-2\"] { width: 47% !important; text-align: left !important; }\n\t\ttable[class=\"full-width\"] { width: 100% !important; text-align: center !important; }\n\t\timg[class=\"img-full\"] { width: 100% !important; height: auto !important; }\n}\n\n\t@media only screen and (max-width: 479px) {\n\t\tbody { width: auto !important; }\n\t\ttable[class=\"table600\"] { width: 290px !important; }\n\t\ttable[class=\"table-container\"] { width: 82% !important; }\n\t\ttable[class=\"container2-2\"] { width: 100% !important; text-align: left !important; }\n\t\ttable[class=\"full-width\"] { width: 100% !important; text-align: center !important; }\n\t\timg[class=\"img-full\"] { width: 100% !important; }\n}\n\n\t</style>\n\n</head>\n\n<body marginwidth=\"0\" marginheight=\"0\" style=\"margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;\" offset=\"0\" topmargin=\"0\" leftmargin=\"0\">\n",
+  "footer": "</body>\n</html>",
+  "modules": [
+    {
+      "uid": "banner",
+      "thumb": "thumbnails/banner.png",
+      "title": "Banner",
+      "html": "<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Banner\" style=\"margin-top: 30px; width: 100%;\">\n    <tbody><tr>\n      <td class=\"view-web-version\" style=\"background: transparent; color: #bbb; font-family: Arial, sans-serif; font-size: 11px; line-height: 150%; padding: 0 0 20px 0; text-align: center;\">\n        The Baardskeerder - AfrikaBurn's Newsletter - <a href=\"[webversion]\" target=\"_blank\" style=\"color: #aaa; font-weight: 600; text-decoration: underline;\">View web version \n      </a></td>\n    </tr>\n    </tbody><tbody>\n      <tr>\n        <td class=\"Banner\" data-editable=\"image\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 0 0 20px 0;\">\n          <div align=\"center\"><img alt=\"\" src=\"img/banner.png\" style=\"height: auto; width: 100%;\"></div>\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "single_image_with_caption",
+      "thumb": "thumbnails/single_image_with_caption.png",
+      "title": "Single Image_With_Caption",
+      "html": "<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Single_Image_With_Caption\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td class=\"centred-image\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px; text-align: center;\">\n          <table align=\"center\" style=\"width: auto;\">\n            <tbody>\n              <tr>\n                <td data-editable=\"image\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 0;\">\n                  <img alt=\"\" src=\"img/test-image.jpg\" width=\"660\" height=\"372\">\n                </td>\n              </tr>\n              <tr>\n                <td data-editable=\"text\" class=\"image-caption\" style=\"background: #ede9df; font-family: courier; font-size: 13px; line-height: 150%; padding: 0; text-align: right;\">(Clan 2018 and SKOP IV, as shot by <a data-color=\"Link\" href=\"https://afrikaburn.com\" style=\"color: #c65541; font-weight: 600;\">Isbjorn Viot</a>)</td>\n              </tr>\n            </tbody>\n          </table>\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "double_image_with_captions",
+      "thumb": "thumbnails/double_image_with_captions.png",
+      "title": "Double Image_With_Captions",
+      "html": "<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Double_Image_With_Captions\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td class=\"centred-image left\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px; padding-right: 10px; text-align: center;\">\n          <table align=\"center\" style=\"width: auto;\">\n            <tbody>\n              <tr>\n                <td data-editable=\"image\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 0;\">\n                  <img alt=\"\" src=\"img/test-image.jpg\" width=\"312\" height=\"176\">\n                </td>\n              </tr>\n              <tr>\n                <td data-editable=\"text\" class=\"image-caption\" style=\"background: #ede9df; font-family: courier; font-size: 13px; line-height: 150%; padding: 0; text-align: right;\">(Clan 2018 and SKOP IV, as shot by <a data-color=\"Link\" href=\"https://afrikaburn.com\" style=\"color: #c65541; font-weight: 600;\">Isbjorn Viot</a>)</td>\n              </tr>\n            </tbody>\n          </table>\n        </td>\n        <td class=\"centred-image right\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px; padding-left: 10px; text-align: center;\">\n          <table align=\"center\" style=\"width: auto;\">\n            <tbody>\n              <tr>\n                <td data-editable=\"image\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 0;\">\n                  <img alt=\"\" src=\"img/test-image.jpg\" width=\"312\" height=\"176\">\n                </td>\n              </tr>\n              <tr>\n                <td data-editable=\"text\" class=\"image-caption\" style=\"background: #ede9df; font-family: courier; font-size: 13px; line-height: 150%; padding: 0; text-align: right;\">(Clan 2018 and SKOP IV, as shot by <a data-color=\"Link\" href=\"https://afrikaburn.com\" style=\"color: #c65541; font-weight: 600;\">Isbjorn Viot)</a></td>\n              </tr>\n            </tbody>\n          </table>\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "heading_1",
+      "thumb": "thumbnails/heading_1.png",
+      "title": "Heading 1",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Heading_1\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td class=\"heading heading-1\" data-editable=\"text\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px;\"><h1 style=\"font-family: Arial; font-weight: 600; margin: 0 0 0.5em 0; text-align: left;\">Heading 1</h1></td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "heading_2",
+      "thumb": "thumbnails/heading_2.png",
+      "title": "Heading 2",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Heading_2\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td class=\"heading heading-2\" data-editable=\"text\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px;\"><h2 style=\"font-family: Arial; font-weight: 600; margin: 0 0 0.5em 0; text-align: left;\">Heading 2</h2></td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "heading_3",
+      "thumb": "thumbnails/heading_3.png",
+      "title": "Heading 3",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Heading_3\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td class=\"heading heading-3\" data-editable=\"text\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px;\"><h3 style=\"font-family: Arial; font-weight: 600; margin: 0 0 0.5em 0; text-align: left;\">Heading 3</h3></td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "heading_4",
+      "thumb": "thumbnails/heading_4.png",
+      "title": "Heading 4",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Heading_4\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td class=\"heading heading-4\" data-editable=\"text\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px;\"><h4 style=\"font-family: Arial; font-weight: 600; margin: 0 0 0.5em 0; text-align: left;\">Heading 4</h4></td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "plain_text",
+      "thumb": "thumbnails/plain_text.png",
+      "title": "Plain Text",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Plain_Text\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td data-editable=\"text\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px;\">\n          Dear AfrikaBurn Community Member,<br><br>\n          First of all, we at African Burns Transformational Desert Experiences would like to apologise for the toilet shitshow, and the plague they <a data-color=\"Link\" href=\"#\" style=\"color: #c65541; font-weight: 600;\">Link text</a> brought. Second, we're doing our very best to tackle the scourge of Plug &amp; Play camps and the disco hellfire they bring. And then, we'd also like to humbly ask your forgiveness for so many loud rigs banging 24/7 from the Monday throughout the week... oh, wait.\n          That was last year.<br><br>\n          But seriously, isn't fantastic to look back and relive the beauty of what we achieved out there, way back at the end of April? Damn straight - so keep that in mind, as we look forward. That's how it works: we build on the gains in order to improve the experience next time. And this year a lot worked, very well - and much of that is down to the effort and goodwill of you, our community. But to business: it might seem like nothing very much happens at this time of year, but that's not the whole story. We're tooling up in the background, tweaking some systems and reviewing, well, pretty much everything whilst we have a little time to exhale and take it all in from a distance.\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "table_of_contents",
+      "thumb": "thumbnails/table_of_contents.png",
+      "title": "Table of_Contents",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Table_of_Contents\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td data-editable=\"text\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px;\">\n          <h1 style=\"font-family: Arial; font-weight: 600; margin: 0 0 0.5em 0; text-align: left;\">In this Newsletter</h1>\n          <ul>\n            <li style=\"font-weight: 600; text-transform: uppercase;\">Item 1</li>\n            <li style=\"font-weight: 600; text-transform: uppercase;\">Item 2</li>\n            <li style=\"font-weight: 600; text-transform: uppercase;\">Item 3</li>\n            <li style=\"font-weight: 600; text-transform: uppercase;\">Item 4</li>\n            <li style=\"font-weight: 600; text-transform: uppercase;\">Item 5</li>\n            <li style=\"font-weight: 600; text-transform: uppercase;\">Item 6</li>\n            <li style=\"font-weight: 600; text-transform: uppercase;\"><a data-color=\"Link\" href=\"https://afrikaburn.com\" style=\"color: #c65541; font-weight: 600;\">Item 7</a></li>\n          </ul>\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "bulleted_list",
+      "thumb": "thumbnails/bulleted_list.png",
+      "title": "Bulleted List",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Bulleted_List\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td data-editable=\"text\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px;\">\n          <ul>\n            <li>Item 1</li>\n            <li>Item 2</li>\n            <li>Item 3</li>\n            <li>Item 4</li>\n            <li>Item 5</li>\n            <li>Item 6</li>\n            <li><a data-color=\"Link\" href=\"https://afrikaburn.com\" style=\"color: #c65541; font-weight: 600;\">Item 7</a></li>\n          </ul>\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "numbered_list",
+      "thumb": "thumbnails/numbered_list.png",
+      "title": "Numbered List",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Numbered_List\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td data-editable=\"text\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px;\">\n          <ol>\n            <li>Item 1</li>\n            <li>Item 2</li>\n            <li>Item 3</li>\n            <li>Item 4</li>\n            <li>Item 5</li>\n            <li>Item 6</li>\n            <li><a data-color=\"Link\" href=\"https://afrikaburn.com\" style=\"color: #c65541; font-weight: 600;\">Item 7</a></li>\n          </ol>\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "link_button",
+      "thumb": "thumbnails/link_button.png",
+      "title": "Link Button",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Link_Button\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px;\">\n          <a class=\"link-button\" data-editable=\"link\" href=\"#\" style=\"background: #fff; border: 2px solid #444; border-radius: 50px; color: #444; display: inline-block; font-family: Arial, sans-serif; font-weight: 600; padding: 10px 20px; text-decoration: none; text-transform: uppercase;\">Link button</a>\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "line_spacer",
+      "thumb": "thumbnails/line_spacer.png",
+      "title": "Line Spacer",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Line_Spacer\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px;\">\n          <hr style=\"background: #444; border: 0; height: 1px;\">\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "spacer",
+      "thumb": "thumbnails/spacer.png",
+      "title": "Spacer",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Spacer\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px;\">\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "sign_off",
+      "thumb": "thumbnails/sign_off.png",
+      "title": "Sign Off",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Sign_Off\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td data-editable=\"text\" style=\"background: #ede9df; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px;\">\n          <hr style=\"background: #444; border: 0; height: 1px;\">\n          THAT'S ALL FOLKS<br>\n          Sometimes, it really is.<br>\n          Onward,<br>\n          Travis Lyle<br>\n          Head of Communications\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "additional_reading",
+      "thumb": "thumbnails/additional_reading.png",
+      "title": "Additional Reading",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Additional_Reading\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td data-editable=\"text\" style=\"background: #ede9df; font-family: courier; font-size: 12px; line-height: 150%; padding: 10px 20px 10px 20px;\">\n            You're still reading? Good on you. You're a real trooper. Check out <a data-color=\"Link\" href=\"https://afrikaburn.com\" style=\"color: #c65541; font-weight: 600;\">this cool thing</a> because you care so much.\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "sharing_buttons",
+      "thumb": "thumbnails/sharing_buttons.png",
+      "title": "Sharing Buttons",
+      "html": "<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Sharing_Buttons\" style=\"width: 100%;\">\n    <tbody>\n      <tr>\n        <td align=\"center\" style=\"background: #afa797; font-family: courier; line-height: 150%; padding: 10px 20px 10px 20px; padding-bottom: 20px; padding-top: 20px;\">\n          <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 160px;\">\n            <tbody>\n              <tr>\n                <td class=\"no-padding\" style=\"background: #afa797; font-family: courier; line-height: 150%; padding: 0; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;\">\n                  <a href=\"https://api.addthis.com/oexchange/0.8/forward/google_plusone_share/offer?url=[webversion]&amp;pubid=ra-57cd884f32547d06&amp;ct=1&amp;title=Share%20the%20Baardskeerder&amp;pco=tbxnj-1.0\" target=\"_blank\" style=\"color: #c65541; font-weight: 600;\"><img src=\"img/google-plus-icon.png\" style=\"display: block; width: 100%;\"></a>\n                </td>\n                <td class=\"no-padding\" style=\"background: #afa797; font-family: courier; line-height: 150%; padding: 0; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;\">\n                  <a href=\"https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=[webversion]&amp;pubid=ra-57cd884f32547d06&amp;ct=1&amp;title=Share%20the%20Baardskeerder&amp;pco=tbxnj-1.0\" target=\"_blank\" style=\"color: #c65541; font-weight: 600;\"><img src=\"img/facebook-icon.png\" style=\"display: block; width: 100%;\"></a>\n\n                </td>\n                <td class=\"no-padding\" style=\"background: #afa797; font-family: courier; line-height: 150%; padding: 0; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;\">\n                  <a href=\"https://api.addthis.com/oexchange/0.8/forward/twitter/offer?url=[webversion]&amp;pubid=ra-57cd884f32547d06&amp;ct=1&amp;title=Share%20the%20Baardskeerder&amp;pco=tbxnj-1.0\" target=\"_blank\" style=\"color: #c65541; font-weight: 600;\"><img src=\"img/twitter-icon.png\" style=\"display: block; width: 100%;\"></a>\n                </td>\n                <td class=\"no-padding\" style=\"background: #afa797; font-family: courier; line-height: 150%; padding: 0; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;\">\n                  <a href=\"https://api.addthis.com/oexchange/0.8/forward/email/offer?url=[webversion]&amp;pubid=ra-57cd884f32547d06&amp;ct=1&amp;title=Share%20the%20Baardskeerder&amp;pco=tbxnj-1.0\" target=\"_blank\" style=\"color: #c65541; font-weight: 600;\"><img src=\"img/email-icon.png\" style=\"display: block; width: 100%;\"></a>\n                </td>\n              </tr>\n            </tbody>\n          </table>\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    },
+    {
+      "uid": "footer",
+      "thumb": "thumbnails/footer.png",
+      "title": "Footer",
+      "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"module\" id=\"Footer\" style=\"margin-bottom: 30px; width: 100%;\">\n    <tbody>\n      <tr>\n        <td data-editable=\"text\" style=\"background: #7c766b; color: #fff; font-family: courier; font-size: 12px; line-height: 150%; padding: 10px; text-align: center;\">\n            AfrikaBurn, P.O.Box 191, Observatory, Cape Town, 7925, South Africa <unsubscribe data-color=\"Link\" style=\"color:#fff\">Unsubscribe here</unsubscribe>\n        </td>\n      </tr>\n    </tbody>\n  </table>"
+    }
+  ]
+}
